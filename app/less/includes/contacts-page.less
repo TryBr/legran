@@ -1,0 +1,456 @@
+.contacts-page {
+  .contacts-block {
+    text-align: left;
+    .contacts-block__title {
+      color: #000000;
+      line-height: 24px;
+      font-size: 18px;
+      font-weight: 700;
+      font-family: "MuseoSansBold";
+      margin-bottom: 30px;
+    }
+
+    .contacts-block__info {
+      font-size: 16px;
+      font-weight: 100;
+      color: #000000;
+      line-height: 24px;
+      font-family: "MuseoSansRegular";
+      margin-bottom: 24px;
+      .block__info__how__link {
+        a {
+          color: #000000;
+          text-decoration: none;
+          border-bottom: 1px dashed #ffcc00;
+          &:hover {
+            border-bottom: 1px dashed transparent;
+          }
+        }
+      }
+    }
+
+    .contacts-block-item {
+      .bold {
+        font-size: 16px;
+        font-weight: 700;
+        color: #000000;
+        line-height: 24px;
+        font-family: "MuseoSansBold";
+      }
+
+      &.block-item--email {
+        margin-top: 24px;
+      }
+
+      a {
+        font-size: 16px;
+        font-weight: 100;
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 1px solid #ffcc00;
+        &:hover {
+          border-bottom: 1px solid transparent;
+        }
+      }
+    }
+  }
+
+
+
+  .contacts-shops-list {
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+    .shops__title {
+      font-family: "MuseoSansBlack";
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #000000;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      font-size: 30px;
+      margin-bottom: 70px;
+      letter-spacing: 0.7px;
+      &:after {
+        content: '.';
+        font-family: "MuseoSansBlack";
+        font-size: 30px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffcc00;
+        margin-left: -5px;
+      }
+    }
+
+    .shops-item {
+      height: 140px;
+      background: #f0f0f0;
+      margin-bottom: 10px;
+      padding: 20px 15px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      .shops-item__title {
+        color: #000000;
+        font-family: "MuseoSansBold";
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 28px;
+      }
+
+      .shops-item-info {
+        font-size: 16px;
+        font-weight: 100;
+        color: #000000;
+        line-height: 24px;
+        font-family: "MuseoSansRegular";
+        .bold {
+          font-size: 16px;
+          font-weight: 700;
+          color: #000000;
+          line-height: 24px;
+          font-family: "MuseoSansBold";
+        }
+
+        a {
+          font-size: 16px;
+          font-weight: 100;
+          color: #000000;
+          text-decoration: none;
+          border-bottom: 1px solid #ffcc00;
+          &:hover {
+            border-bottom: 1px solid transparent;
+          }
+        }
+
+        &.item-info--right {
+          padding-top: 55px;
+        }
+      }
+    }
+  }
+
+  .contacts-form-block {
+    margin-top: 70px;
+    .contacts-form-map {
+      width: 665px;
+      float: left;
+      .contacts-form-map__img {
+      }
+    }
+  }
+
+  .contacts-form-wrapper {
+    float: left;
+    width: 445px;
+    height: 626px;
+    background: #f0f0f0;
+    text-align: center;
+
+    .contacts-form__title {
+      font-family: "MuseoSansBlack";
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #000000;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      font-size: 24px;
+      margin-bottom: 50px;
+      padding-top: 50px;
+      &:after {
+        content: '.';
+        font-family: "MuseoSansBlack";
+        font-size: 24px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffcc00;
+        margin-left: 2px;
+      }
+    }
+
+    .contacts-form {
+      .form-field-wrapper {
+        position: relative;
+        width: 305px;
+        margin: 0 auto;
+        .form-field__placeholder {
+          font-size: 16px;
+          font-weight: 100;
+          line-height: 24px;
+          color: #5f5f5f;
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          span {
+            color: #ffcc00;
+          }
+        }
+      }
+
+      .form__field {
+        background: none;
+        box-shadow: none;
+        border: none;
+        width: 305px;
+        margin: 0 auto;
+        display: block;
+        border-bottom: 2px solid #ffcc00;
+        margin-bottom: 40px;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        &:focus {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        // &:focus:required:invalid {
+        //   border-bottom: 2px solid #ff0000;
+        // }
+        //
+        // &:required:valid {
+        //   & + .form-field__placeholder {
+        //     opacity: 0;
+        //     visibility: hidden;
+        //   }
+        // }
+        // &:valid {
+        //   & + .form-field__placeholder {
+        //     opacity: 0;
+        //     visibility: hidden;
+        //   }
+        // }
+
+        &.valid {
+          & + .form-field__placeholder {
+            opacity: 1;
+            visibility: hidden;
+          }
+        }
+
+        &:required:valid {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        &.error {
+          border-bottom: 2px solid #ff0000;
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+
+      .form__textarea {
+        background: none;
+        box-shadow: none;
+        border: none;
+        width: 305px;
+        height: 70px;
+        margin: 0 auto;
+        display: block;
+        border-bottom: 2px solid #ffcc00;
+        margin-bottom: 40px;
+        resize: none;
+        outline: none;
+        position: relative;
+        z-index: 1;
+        &:focus {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: none;
+          }
+        }
+
+        // &:focus:required:invalid {
+        //   border-bottom: 2px solid #ff0000;
+        // }
+        //
+        // &:required:valid {
+        //   & + .form-field__placeholder {
+        //     opacity: 0;
+        //     visibility: none;
+        //   }
+        // }
+        &:valid {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        &.valid {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        &:required:valid {
+          & + .form-field__placeholder {
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+
+        &.error {
+          border-bottom: 2px solid #ff0000;
+        }
+      }
+
+      .form__btn {
+        width: 196px;
+        height: 55px;
+        background: #ffcc00;
+        margin: 0 auto;
+        display: block;
+        outline: none;
+        border: none;
+        margin-top: 50px;
+        color: #000000;
+        font-family: "MuseoSansBold";
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover {
+          background: darken(#ffcc00, 2%);
+        }
+      }
+
+      .form-check {
+        font-size: 16px;
+        font-weight: 100;
+        color: #5f5f5f;
+        width: 305px;
+        margin: 0 auto;
+        display: block;
+        a {
+          font-size: 16px;
+          font-weight: 100;
+          color: #5f5f5f;
+          text-decoration: none;
+          border-bottom: 1px solid #ffcc00;
+          &:hover {
+            border-bottom: 1px solid transparent;
+          }
+        }
+
+        .form-check__checkbox {
+          border: 2px solid #5f5f5f;
+          width: 20px;
+          height: 20px;
+          display: block;
+          float: left;
+          margin-right: 20px;
+          cursor: pointer;
+          position: relative;
+        }
+
+        .form-check-label {
+          cursor: pointer;
+          float: left;
+          text-align: left;
+          width: 260px;
+        }
+
+        input {
+          display: none;
+        }
+
+        input:checked + .form-check__checkbox  {
+          &:before {
+            content: '';
+            left: 1px;
+            top: 3px;
+            position: absolute;
+            width: 14px;
+            height: 11px;
+            background: url("../img/check__icon.png");
+
+          }
+        }
+
+        &.invalid {
+          color: red;
+          a {
+            color: red;
+          }
+
+          .form-check__checkbox {
+            border: 2px solid red;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .contacts-page {
+    .contacts-block {
+      margin-bottom: 30px;
+    }
+
+    .contacts-form-block {
+      .contacts-form-map {
+        width: 100%;
+        float: none;
+        img {
+          width: 100%;
+        }
+      }
+
+      .contacts-form-wrapper {
+        float: none;
+        width: 100%;
+        .contacts-form {
+          margin: 0 20px;
+          .form-field-wrapper {
+            width: 100%;
+          }
+          .form__field {
+            width: 100%;
+          }
+
+          .form__textarea {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .contacts-shops-list {
+      .shops-item {
+        height: auto;
+      }
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

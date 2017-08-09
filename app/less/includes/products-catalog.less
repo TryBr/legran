@@ -1,0 +1,152 @@
+.products-catalog {
+  margin-bottom: 65px;
+  .products-item {
+    position: relative;
+    margin-bottom: 70px;
+    .products-item__link {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .products-item-photo {
+      width: 285px;
+      height: 230px;
+      position: relative;
+      z-index: 1;
+      .products-item__photo {
+        width: 100%;
+        max-height: 230px;
+      }
+    }
+
+    .products-item-bg {
+      width: 285px;
+      height: 230px;
+      background: #f0f0f0;
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      -webkit-transition: all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition:         all 600ms cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    .products-item__title {
+      color: #000000;
+      font-size: 24px;
+      font-weight: 100;
+      text-transform: uppercase;
+      position: absolute;
+      top: 95px;
+      left: 252px;
+      z-index: 2;
+      text-decoration: none;
+      display: block;
+      border-bottom: 2px solid #fc0;
+      padding: 0 70px;
+      padding-bottom: 10px;
+      white-space: nowrap;
+      letter-spacing: 0.7px;
+    }
+    //
+    // .products-item__line {
+    //   width: 220px;
+    //   height: 2px;
+    //   background: #ffcc00;
+    //   position: absolute;
+    //   left: 255px;
+    //   top: 140px;
+    //   z-index: 2;
+    // }
+
+    &:hover {
+      .products-item-bg {
+        top: 20px;
+        left: 65px;
+      }
+    }
+  }
+
+  .products-catalog-show-all {
+    text-align: center;
+    margin-top: 20px;
+    .products-catalog-show-all__link {
+      color: #000000;
+      font-family: "MuseoSansBold";
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 1px dashed #ffcc00;
+      display: inline-block;
+      text-align: center;
+      margin: 0 auto;
+      text-decoration: none;
+      position: relative;
+      letter-spacing: 0.7px;
+      &:before {
+        content: '';
+        background: url("../img/refresh__icon.png");
+        width: 16px;
+        height: 11px;
+        display: block;
+        position: absolute;
+        top: 5px;
+        left: -24px;
+      }
+      &:hover {
+        border-bottom: 1px dashed transparent;
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .products-catalog {
+    .swiper-container {
+      width: 100%;
+      padding-bottom: 40px;
+    }
+
+    .products-item {
+      .products-item__title {
+        position: relative;
+        top: auto;
+        bottom: -30px;
+        left: 0px;
+        text-align: center;
+      }
+
+      .products-item-photo {
+        margin: 0 auto;
+      }
+
+      .products-item-bg {
+        display: none;
+      }
+    }
+
+    .products-nav {
+      display: none;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

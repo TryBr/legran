@@ -1,0 +1,144 @@
+.references {
+  position: relative;
+  .references-item {
+    .references-item-photo-wrapper {
+      width: 165px;
+      position: relative;
+      margin: 0 auto;
+      &:after {
+        content: '';
+        background: url("../img/references-quote__icon.png") no-repeat;
+        width: 50px;
+        height: 47px;
+        position: absolute;
+        top: 0px;
+        right: -30px;
+      }
+    }
+
+    .references-item-photo {
+      width: 165px;
+      height: 165px;
+      border-radius: 50%;
+      line-height: 160px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+
+      .references-item__photo {
+        max-height: 165px;
+      }
+    }
+
+    .references-item__name {
+      color: #000000;
+      font-family: "MuseoSansBold";
+      font-size: 16px;
+      font-weight: 700;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 20px;
+    }
+
+    .references-item__post {
+      color: #000000;
+      font-family: "MuseoSansRegular";
+      font-size: 16px;
+      font-weight: 100;
+      text-align: center;
+    }
+
+    .references-item__information {
+      color: #000000;
+      font-size: 16px;
+      font-style: italic;
+      padding-left: 30px;
+      line-height: 24px;
+      p {
+        &:first-child {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+
+  .references-nav {
+    position: absolute;
+    width: 50px;
+    bottom: -20px;
+    left: 115px;
+    z-index: 1;
+    .references-nav-prev {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__prev__disable.png") no-repeat;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      cursor: pointer;
+      &.disabled {
+        opacity: 0.5;
+        &:hover {
+          background: url("../img/nav__arrow__prev__disable.png") no-repeat;
+        }
+      }
+
+      &:hover {
+        background: url("../img/nav__arrow__prev.png") no-repeat;
+      }
+    }
+
+    .references-nav-next {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__next__disable.png") no-repeat;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      cursor: pointer;
+      &.disabled {
+        opacity: 0.5;
+        &:hover {
+          background: url("../img/nav__arrow__next__disable.png") no-repeat;
+        }
+      }
+
+      &:hover {
+        background: url("../img/nav__arrow__next.png") no-repeat;
+      }
+    }
+  }
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+  .references {
+    margin-bottom: 100px;
+    .references-nav {
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

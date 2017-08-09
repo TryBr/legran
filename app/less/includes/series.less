@@ -1,0 +1,510 @@
+.series-page {
+  .page-menu-wrapper {
+    position: absolute;
+    top: 13px;
+    right: 0;
+    width: 215px;
+    z-index: 1;
+    background: #fff;
+    .page-menu {
+      padding-left: 25px;
+      width: 95px;
+      margin-top: 4px;
+      position: relative;
+    }
+    .page-menu-item {
+      margin-bottom: 25px;
+      .page-menu-item__link {
+        font-family: "MuseoSansBold";
+        font-size: 16px;
+        font-weight: 700;
+        color: #000000;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        &:hover {
+          border-bottom: 2px solid #ffcc00;
+        }
+      }
+    }
+
+    &.dropdown {
+      cursor: pointer;
+      .page-menu {
+        &:after {
+          content: '';
+          background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAPCAYAAAA/I0V3AAAA2klEQVQ4T53S3RGCMBBG0btDAVqCHQAjvluCHQgdaCdYgZRgCRaAA3agHWABGicxYPgRZszznt3Nlwh/HFE5GaAkIpnyTa3KKQEfyMagBVvgKqpgzpPzGHQBHmvRK43BHgipDPoFh4CuFXUh5oUvK/adiTdgoe9gVgqpVE6KUOr0WkF0oAt0yq0gdNcZcJCInYUpHjs7oQZ3PII6iMAmOENIZGne7nNXvb7iCDzsmqUbRA8OAROE+wtUwRdipsXuhLq2hWz0LmxWcpv3kANPeGwkNOm2ziCa+rhv12B9mGTVckUAAAAASUVORK5CYII=") no-repeat;
+          width: 13px;
+          height: 15px;
+          position: absolute;
+          top: 3px;
+          right: -18px;
+        }
+      }
+    }
+  }
+
+  .series-information-wrapper {
+    position: relative;
+    margin-bottom: 70px;
+    .series-information-photo {
+      width: 445px;
+      height: 297px;
+      overflow: hidden;
+      margin-top: 30px;
+      margin-left: 30px;
+      position: relative;
+      z-index: 1;
+      .series-information__photo {
+        max-height: 297px;
+        width: 100%;
+      }
+    }
+
+    .series-information-photo-bg {
+      width: 444px;
+      height: 297px;
+      background: #f0f0f0;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+    }
+
+    .series-information {
+      padding-left: 40px;
+      padding-top: 55px;
+      color: #000000;
+      font-size: 16px;
+      font-weight: 100;
+      line-height: 24px;
+    }
+
+    .series-information-links {
+      padding-left: 40px;
+      margin-top: 20px;
+      .series-information__link {
+        color: #000000;
+        font-family: "MuseoSansBold";
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px dashed #000000;
+        margin-right: 55px;
+        position: relative;
+        letter-spacing: 0.7px;
+        &:last-child {
+          margin-right: 0px;
+        }
+
+        &:hover {
+          border-bottom: 1px dashed transparent;
+        }
+
+        &.link--yellow {
+          color: #ffcc00;
+          border-bottom: 1px dashed #ffcc00;
+
+          &:after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: -26px;
+            width: 10px;
+            height: 16px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAQCAYAAAAvf+5AAAAAo0lEQVQoU+2RwQ2CQBBF30ADdiIE78YKLEFLoAO3BOxAO7ADw50N2okNwBgGMKvuwQKcy2R2Xv5s/hd+LPnk1FMOb1JQhbsY6CbQ+lx/0JxQT9webbiQ4iTnFgO1JaPjIOrZA46ETHIeoaK2LOi4IhzNcFsqW1I29GOEJFQTVEtB+UpGG07AEqEeP8sauMvKLvIWocHCbgLPM/QFmtCoTAgN8xPHOUe3OS3NhgAAAABJRU5ErkJggg==") no-repeat;
+          }
+
+          &:hover {
+            border-bottom: 1px dashed transparent;
+          }
+        }
+
+        &.link--black {
+          &:after {
+            content: '';
+            position: absolute;
+            top: 3px;
+            right: -26px;
+            width: 16px;
+            height: 11px;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAAAfElEQVQoU53SUQ1CMQxG4e8qAAlIQBIoAAdowMFFATgABwRH5E8YuQk8rGuyl2bndO066Y8bcuYlMvXztnjghHPjKoIw64/kiX0SVcGPpAmOWBXayUvCzEtBkr2RuwdcRlu444VdVZDKX7g6xA2urfLIN2YHskTDi/R3wG/xqxNLdXrh0wAAAABJRU5ErkJggg==") no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.series-variants {
+  border-top: 1px solid #f0f0f0;
+
+  .series-variants__title {
+    font-family: "MuseoSansBlack";
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #000000;
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    letter-spacing: 0.7px;
+    &:after {
+      content: '.';
+      font-family: "MuseoSansBlack";
+      font-size: 30px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #ffcc00;
+      margin-left: 2px;
+    }
+  }
+
+  .series-variants-filter {
+    position: relative;
+    margin-bottom: 70px;
+    &:before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 26px;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      background: #f0f0f0;
+    }
+
+    // &:after {
+    //   content: '';
+    //   display: block;
+    //   width: 380px;
+    //   height: 26px;
+    //   position: absolute;
+    //   right: 0px;
+    //   top: 0px;
+    //   background: #f0f0f0;
+    // }
+
+    .series-variants-filter-items {
+      width: 750px;
+      position: relative;
+      padding-left: 65px;
+      &:after {
+        content: '';
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAeCAYAAACmPacqAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMDY3IDc5LjE1Nzc0NywgMjAxNS8wMy8zMC0yMzo0MDo0MiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyZTdmYTY4Ni0xOTZlLTk0NGQtYTMyYy05ODU0YzZjYWVjY2MiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MkExRjkxNDE3NTczMTFFNzgyNTRFRkE0Q0IwNzBCQzEiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MkExRjkxNDA3NTczMTFFNzgyNTRFRkE0Q0IwNzBCQzEiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUuNSAoV2luZG93cykiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo3NmRkMzc1Yi0yNGZmLWM0NGItOTllNC1lYTg4ZTYyODIzYWUiIHN0UmVmOmRvY3VtZW50SUQ9ImFkb2JlOmRvY2lkOnBob3Rvc2hvcDo1NjI2MTIxNC01ZmI0LTExZTctOWIwZS04OTEyY2QwM2UxZDAiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6TZR+lAAAAtUlEQVR42mL8//8/Awx8/PiRgUqADYi7gTgGiBmBeDEQlwLxL3yaWBhoA7qAOA+JD2J/B+IKfJoYP3z48J9hkAAmhkEEmPj5+RlhGBq/1MATcUQdXn20SjNlUAtioXxQAq4lpImRRrlpGKSZUceMOoYGjmGDlhtvgfgdlM1GC8cQU86QVc+QA0brJkrqJrLqGXIwMWmGrHqGrDQzWjeNOmbUMYPcMWTVZ6P9ptF+05DuNwEEGAB5NTnKs1qRWgAAAABJRU5ErkJggg==") no-repeat;
+        width: 35px;
+        height: 30px;
+        position: absolute;
+        left: 0px;
+        top: 3px;
+      }
+    }
+
+    .variants-filter__item + a:before {
+      color: #0e0e0e;
+      content: "|";
+      position: absolute;
+      left: -8px;
+      font-weight: 100 !important;
+    }
+
+
+    .variants-filter__item {
+      font-size: 16px;
+      color: #0e0e0e;
+      font-weight: 100;
+      margin-bottom: 10px;
+      display: inline-block;
+      position: relative;
+      margin-right: 10px;
+      text-decoration: none;
+      &:last-child {
+        &:before {
+          display: none;
+        }
+      }
+
+      &:hover {
+        color: #ffcc00;
+      }
+    }
+
+  }
+}
+
+
+.series-variants-slider {
+  position: relative;
+  .series-variants-item {
+    .series-variants-item-photo {
+      .series-variants-item__photo {
+
+      }
+    }
+
+    .series-variants-item__title {
+      color: #000000;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-top: 10px;
+      &:after {
+        content: '';
+        width: 44px;
+        height: 3px;
+        background-color: #ffcc00;
+        display: block;
+        margin-top: 8px;
+      }
+    }
+
+    .series-variants-item-big {
+      display: none;
+      .item-big-photo {
+          width: 255px;
+          height: 515px;
+        .item-big__photo {
+          max-height: 515px;
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .series-nav {
+    .series-nav-prev {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__prev__disable.png") no-repeat;
+      position: absolute;
+      left: -60px;
+      top: 40%;
+      cursor: pointer;
+      &:hover {
+        background: url("../img/nav__arrow__prev.png") no-repeat;
+      }
+    }
+
+    .series-nav-next {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__next__disable.png") no-repeat;
+      position: absolute;
+      right: -60px;
+      top: 40%;
+      cursor: pointer;
+      &:hover {
+        background: url("../img/nav__arrow__next.png") no-repeat;
+      }
+    }
+  }
+
+  // .swiper-slide-active {
+  //   .series-variants-item-photo {
+  //     display: none;
+  //   }
+  //
+  //   .series-variants-item__title {
+  //     display: none;
+  //   }
+  //
+  //   .series-variants-item-big {
+  //     display: block;
+  //   }
+  // }
+}
+
+.series-variants-info {
+  margin-top: 70px;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #f0f0f0;
+  .series-variants-info-photo {
+    width: 255px;
+    height: 255px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 45px;
+    position: relative;
+    z-index: 1;
+    .info-photo__img {
+      max-height: 255px;
+      width: 100%;
+    }
+  }
+
+  .info-photo-bg {
+    width: 255px;
+    height: 255px;
+    background: #f0f0f0;
+    position: absolute;
+    top: 0px;
+    left: 15px;
+  }
+
+  .series-variants-info-block {
+    margin-left: 54px;
+    margin-top: 10px;
+    .info-block__title {
+      font-family: "MuseoSansBlack";
+      font-size: 24px;
+      font-weight: 900;
+      text-transform: uppercase;
+      color: #000000;
+      display: inline-block;
+      position: relative;
+      margin: 0 auto;
+      margin-bottom: 25px;
+      letter-spacing: 0.7px;
+      &:after {
+        content: '.';
+        font-family: "MuseoSansBlack";
+        font-size: 36px;
+        font-weight: 900;
+        text-transform: uppercase;
+        color: #ffcc00;
+        margin-left: 2px;
+      }
+    }
+
+    .info-block-properties {
+      .properties-item {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 100;
+        margin-bottom: 20px;
+        .properties--bold {
+          font-family: "MuseoSansBlack";
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}
+
+.series-additional-products {
+  margin-top: 65px;
+  .products__title {
+    margin-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .products-item {
+    position: relative;
+    .products-item__link {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+    .products-item-photo {
+      width: 100%;
+      height: 350px;
+      position: relative;
+      z-index: 1;
+      .products-item__photo {
+        width: 100%;
+        max-height: 350px;
+      }
+    }
+
+    .products-item-info {
+      margin-left: 20px;
+
+      .products-properties {
+        .products-item-property {
+          color: #000000;
+          font-size: 16px;
+          font-weight: 100;
+          margin-bottom: 20px;
+          .property--bold {
+            font-family: "MuseoSansBlack";
+            font-weight: 700;
+          }
+        }
+      }
+
+      .products-list__title {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 100;
+        font-family: "MuseoSansBlack";
+        font-weight: 700;
+      }
+
+      ul {
+        padding: 0px;
+        list-style: none;
+        li {
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 10px;
+          &:before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            background: #ffcc00;
+            position: absolute;
+            left: 0px;
+            top: 8px;
+          }
+        }
+      }
+
+      p {
+        color: #000000;
+        font-size: 16px;
+        font-weight: 100;
+      }
+    }
+
+    .products-item__title {
+      color: #000000;
+      font-family: "MuseoSansBlack";
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      position: relative;
+      margin-bottom: 25px;
+      letter-spacing: 0.7px;
+      &:before {
+        content: '';
+        width: 120px;
+        height: 3px;
+        background: #ffcc00;
+        position: absolute;
+        bottom: 0px;
+      }
+    }
+  }
+
+  .products-nav {
+    .products-nav-prev {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__prev.png") no-repeat;
+      position: absolute;
+      left: -70px;
+      top: 60%;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .products-nav-next {
+      width: 11px;
+      height: 20px;
+      background: url("../img/nav__arrow__next.png") no-repeat;
+      position: absolute;
+      right: -70px;
+      top: 60%;
+      cursor: pointer;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

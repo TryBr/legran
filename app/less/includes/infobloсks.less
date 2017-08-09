@@ -1,0 +1,109 @@
+.infoblocks {
+  margin-top: 20px;
+  position: relative;
+  margin-bottom: 70px;
+  &:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 18px;
+    position: absolute;
+    left: 0px;
+    top: 5px;
+    background: #ffcc00;
+  }
+
+  // &:after {
+  //   content: '';
+  //   display: block;
+  //   width: 65px;
+  //   height: 18px;
+  //   position: absolute;
+  //   right: 0px;
+  //   top: 5px;
+  //   background: #ffcc00;
+  // }
+
+  .infoblocks__title {
+    margin-bottom: 30px;
+  }
+
+  .infoblocks-more__link {
+    color: #000000;
+    font-family: "MuseoSansRegular";
+    font-size: 16px;
+    font-weight: 100;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #ffcc00;
+    &:hover {
+      border-bottom: 1px solid transparent;
+      color: #ffcc00;
+    }
+  }
+
+  p {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 24px;
+    margin: 0px;
+  }
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: 100;
+    li {
+      margin-bottom: 15px;
+      position: relative;
+      padding-left: 20px;
+      &:last-child {
+        margin-bottom: 0px;
+      }
+      &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #ffcc00;
+        display: block;
+        position: absolute;
+        top: 6px;
+        left: 0px;
+      }
+    }
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+  .infoblocks {
+    .infoblock-item {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+
+}

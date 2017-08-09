@@ -1,0 +1,45 @@
+.breadcrumb {
+  font-family: "MuseoSansLight";
+  margin-bottom: 28px;
+  margin-top: 50px;
+
+  span {
+    position: relative;
+    font-size: 16px;
+    font-weight: 100;
+    color: #000000;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+}
+
+.breadcrumb a {
+  font-size: 16px;
+  font-weight: 100;
+  color: #000000;
+  border-bottom: 1px solid #ffcc00;
+  text-decoration: none;
+  position: relative;
+  margin-right: 15px;
+  &:hover {
+    border-bottom: 1px solid transparent;
+  }
+}
+
+.breadcrumb > a + a:before {
+  color: #ffcc00;
+  content: "/";
+  padding: 0 5px;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+}
+
+.breadcrumb > span:before {
+  color: #ffcc00;
+  content: "/";
+  padding: 0 5px;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+}

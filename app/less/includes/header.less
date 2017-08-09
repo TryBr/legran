@@ -1,0 +1,81 @@
+.header {
+  height: 100px;
+  background: #fff;
+  font-family: "MuseoSansBold";
+  letter-spacing: 0.7px;
+
+  a {
+    text-decoration: none !important;
+  }
+
+  .header-logo {
+    margin-top: 26px;
+  }
+
+  .header-contancts__phone {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 41px;
+  }
+
+  .header-language-switcher {
+    margin-top: 41px;
+    white-space: nowrap;
+    .language-switcher-item {
+      display: inline-block;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      &.active {
+        color: #ffcd00;
+      }
+
+      &:hover {
+        color: #ffcd00;
+      }
+    }
+  }
+
+  .header-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 41px;
+    float: right;
+    .menu-item {
+      display: inline-block;
+      margin-right: 25.6px;
+      &:last-child {
+        margin-right: 0px;
+      }
+      .menu-item__link {
+        display: inline-block;
+        color: #000000;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      &.active {
+        .menu-item__link {
+          color: #ffcd00;
+        }
+      }
+
+      &:hover {
+        .menu-item__link {
+          color: #ffcd00;
+        }
+      }
+    }
+  }
+}

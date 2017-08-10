@@ -21,11 +21,11 @@ $(document).ready(function() {
 				},
 				// when window width is <= 640px
 				767: {
-					slidesPerView: 1,
+					slidesPerView: 2,
 					spaceBetween: 0
 				},
 				1199: {
-					slidesPerView: 1,
+					slidesPerView: 4,
 					spaceBetween: 0
 				}
 			}
@@ -63,6 +63,10 @@ $(document).ready(function() {
 				767: {
 					slidesPerView: 1,
 					spaceBetween: 0
+				},
+				1199: {
+					slidesPerView: 2,
+					spaceBetween: 30
 				}
 			}
 	});

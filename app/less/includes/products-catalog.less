@@ -84,7 +84,7 @@
       letter-spacing: 0.7px;
       &:before {
         content: '';
-        background: url("../img/refresh__icon.png");
+        background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAYAAAB24g05AAABBUlEQVQoU32S3VHCUBCFvzNSgCWkg8AQnwkdpAOxIzswVoBWID4bhqQD6YAC1HX25hLChWEf7+6ee35WJGU77vnlEWOFmMb2BqhV8JrOa/xgOzJ+WMfFd4w29EWG2GhOfRugCQsZd5SaxeV0A3CWmnHosWPZlhXGC8ZSDzjlq2UNNUbOhKWDnAAa3vx3FYPuM4DozRooQ8PlOYg1VIg8mNZz8h86FQFwqDBnTFGcM2pEq4jslPOI/MmE6qjxIqWGb6BVQTV4MALxRs/kmnlflIgPxNMxkZMHI2dvLLsH+7FPZ3eQJLJAga4b5gfllLsYcYhwkHCh0yP9C5e4iL3OzdWc53T2H06RYAUajQZQAAAAAElFTkSuQmCC");
         width: 16px;
         height: 11px;
         display: block;
@@ -101,16 +101,6 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (max-width : 767px) {
   .products-catalog {
     .swiper-container {
       width: 100%;
@@ -124,6 +114,7 @@
         bottom: -30px;
         left: 0px;
         text-align: center;
+        padding: 0px;
       }
 
       .products-item-photo {
@@ -139,6 +130,16 @@
       display: none;
     }
   }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+
 }
 
 /* Extra Small Devices, Phones */

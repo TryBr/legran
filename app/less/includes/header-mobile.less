@@ -1,61 +1,29 @@
-.header {
-  height: 100px;
-  background: #fff;
+.navbar-mobile {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0px;
   font-family: "MuseoSansBold";
   letter-spacing: 0.7px;
-
-  a {
-    text-decoration: none !important;
-  }
-
+  display: none;
   .header-logo {
-    margin-top: 26px;
+    margin-left: 15px;
+    float: left;
   }
 
-  .header-contancts__phone {
-    color: #000000;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-top: 41px;
-  }
-
-  .header-language-switcher {
-    margin-top: 41px;
-    white-space: nowrap;
-    .language-switcher-item {
-      display: inline-block;
-      color: #000000;
-      font-size: 14px;
-      font-weight: 500;
-      text-transform: uppercase;
-      margin-right: 5px;
-      &:last-child {
-        margin-right: 0px;
-      }
-
-      &.active {
-        color: #ffcd00;
-      }
-
-      &:hover {
-        color: #ffcd00;
-      }
+  .navbar-toggle {
+    background: #000;
+    cursor: pointer;
+    .icon-bar {
+      background: #fff;
     }
   }
 
-  .header-menu {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
-    margin-top: 41px;
-    float: right;
+  .navbar-nav {
+    margin: 16.5px -15px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
     .menu-item {
-      display: inline-block;
-      margin-right: 25.6px;
-      &:last-child {
-        margin-right: 0px;
-      }
+      display: block;
       .menu-item__link {
         display: inline-block;
         color: #000000;
@@ -78,13 +46,45 @@
       }
     }
   }
-}
 
+  .header-contancts__phone {
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-top: 20px;
+    border-top: 1px solid #fc0;
+  }
+
+  .header-language-switcher {
+    margin-top: 20px;
+    white-space: nowrap;
+    .language-switcher-item {
+      display: inline-block;
+      color: #000000;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0px;
+      }
+
+      &.active {
+        color: #ffcd00;
+      }
+
+      &:hover {
+        color: #ffcd00;
+      }
+    }
+  }
+}
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
-  .header {
-    display: none;
+  .navbar-mobile {
+    display: block;
   }
 }
 

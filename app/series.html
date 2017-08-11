@@ -18,6 +18,34 @@
 
 <body>
 
+	<!-- series slider -->
+	<div id="catalog-series-gallery__link" class="series-gallery clearfix">
+		<div class="swiper-container swiper-series-gallery">
+				<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="files/series-photogallery__img.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="files/series-photogallery__img.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="files/series-photogallery__img.jpg" alt="">
+						</div>
+						<div class="swiper-slide">
+							<img src="files/series-photogallery__img.jpg" alt="">
+						</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-nav-panel clearfix">
+					<div class="swiper-pagination"></div>
+					<div class="gallery-nav-prev"></div>
+					<div class="gallery-nav-next"></div>
+					<div id="gallery-close" class="gallery-nav-close"></div>
+				</div>
+		</div>
+	</div>
+
+
 	<!-- header -->
 	<div class="header clearfix">
 		<div class="container container--with--padding">
@@ -201,8 +229,8 @@
 							</p>
 						</div>
 						<div class="series-information-links">
-							<a href="" class="series-information__link link--black">Фотогалерея</a>
-							<a href="" class="series-information__link link--yellow">Смотреть каталог серии</a>
+							<a id="gallery" href="#catalog-series-gallery__link" class="series-information__link link--black">Фотогалерея</a>
+							<a id="catalog-series-view" href="#catalog-series-view__link" class="series-information__link link--yellow">Смотреть каталог серии</a>
 						</div>
 					</div>
 				</div>
@@ -214,7 +242,7 @@
 		</div>
 
 	<!-- series variants -->
-	<div class="series-variants clearfix">
+	<div id="catalog-series-view__link" class="series-variants clearfix">
 		<div class="container block--hide container--with--padding">
 			<div class="row">
 				<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
@@ -242,6 +270,96 @@
 
 		<div class="series-variants-slider block--hide clearfix">
 			<div class="container container--with--padding">
+					<!-- colors 1 -->
+					<div class="series-colors-slider clearfix">
+						<div class="series-colors-nav clearfix">
+							<div class="series-colors-nav-prev"></div>
+							<div class="series-colors-nav-next"></div>
+						</div>
+						<div class="series-colors-slider-title">
+							Цвет плёки: <span class="title__value">Орех</span>
+						</div>
+						<div class="swiper-container swiper-colors-main">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide active">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide ">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- colors 2 -->
+					<div class="series-colors-slider series-colors-slider--additional clearfix">
+						<div class="series-colors-nav clearfix">
+							<div class="series-colors-nav-prev-2"></div>
+							<div class="series-colors-nav-next-2"></div>
+						</div>
+						<div class="series-colors-slider-title">
+							Цвет молдинга: <span class="title__value">Красное дерево</span>
+						</div>
+						<div class="swiper-container swiper-colors-additional">
+							<div class="swiper-wrapper">
+									<div class="swiper-slide active">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide ">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="series-colors-item clearfix">
+											<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+										</div>
+									</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="series-nav clearfix">
 						<div class="series-nav-prev"></div>
 						<div class="series-nav-next"></div>
@@ -253,51 +371,93 @@
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-2.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
-
-												<div class="series-variants-item-big">
-													<div class="item-big-photo">
-														<img src="files/doors/goods-1-big.jpg" alt="" class="item-big__photo">
-													</div>
-												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-3.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-4.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-2.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-3.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 								</div>
-						</div>
+							</div>
 					</div>
 				</div>
 			</div>
@@ -370,58 +530,191 @@
 
 		<div class="series-variants-slider block--hide clearfix">
 			<div class="container container--with--padding">
+
+				<!-- colors 1 -->
+				<div class="series-colors-slider clearfix">
+					<div class="series-colors-nav clearfix">
+						<div class="series-colors-nav-prev-11"></div>
+						<div class="series-colors-nav-next-11"></div>
+					</div>
+					<div class="series-colors-slider-title">
+						Цвет плёки: <span class="title__value">Орех</span>
+					</div>
+					<div class="swiper-container swiper-colors-main-2">
+						<div class="swiper-wrapper">
+								<div class="swiper-slide active">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide ">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- colors 2 -->
+				<div class="series-colors-slider series-colors-slider--additional clearfix">
+					<div class="series-colors-nav clearfix">
+						<div class="series-colors-nav-prev-22"></div>
+						<div class="series-colors-nav-next-22"></div>
+					</div>
+					<div class="series-colors-slider-title">
+						Цвет молдинга: <span class="title__value">Красное дерево</span>
+					</div>
+					<div class="swiper-container swiper-colors-additional">
+						<div class="swiper-wrapper">
+								<div class="swiper-slide active">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide ">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__1.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__2.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="series-colors-item clearfix">
+										<img src="img/series-color__3.png" alt="" class="series-colors-item__img">
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+
 					<div class="series-nav clearfix">
-						<div class="series-nav-prev"></div>
-						<div class="series-nav-next"></div>
+						<div class="series-nav-ad-prev"></div>
+						<div class="series-nav-ad-next"></div>
 					</div>
 					<div class="row">
-						<div class="col-lg-12">
-							<div class="swiper-container swiper-series">
+						<div class="col-lg-12 col-xs-12 col-sm-12 col-md-12">
+							<div class="swiper-container swiper-series-additional">
 								<div class="swiper-wrapper">
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-2.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
-
-												<div class="series-variants-item-big">
-													<div class="item-big-photo">
-														<img src="files/doors/goods-1-big.jpg" alt="" class="item-big__photo">
-													</div>
-												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-3.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-4.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-2.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 										<div class="swiper-slide">
 											<div class="series-variants-item clearfix">
 												<div class="series-variants-item-photo">
-													<img src="files/doors/goods-3.jpg" alt="" class="series-variants-item__photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
 												</div>
-												<div class="series-variants-item__title">Милан</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
+											</div>
+										</div>
+										<div class="swiper-slide">
+											<div class="series-variants-item clearfix">
+												<div class="series-variants-item-photo">
+													<a href="">
+														<img src="files/doors/goods-1-big.jpg" alt="" class="series-variants-item__photo">
+													</a>
+												</div>
+												<div class="series-variants-item__title"><a href="">Милан</a></div>
+												<div class="series-variants-item-bg"></div>
 											</div>
 										</div>
 								</div>
@@ -472,8 +765,8 @@
 	<div class="series-additional-products block--hide clearfix">
 		<div class="container container--with--padding">
 			<div class="products-nav clearfix">
-				<div class="products-nav-prev"></div>
-				<div class="products-nav-next"></div>
+				<div class="products-nav-ad-prev products-nav-prev"></div>
+				<div class="products-nav-ad-next products-nav-next"></div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 col--no--padding">
@@ -482,18 +775,60 @@
 			</div><!-- row -->
 
 			<div class="row">
-				<div class="swiper-container swiper-products">
+				<div class="swiper-container swiper-products-additional">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 									<div class="products-item clearfix">
 										<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
 											<div class="products-item-photo">
-												<img class="products-item__photo" src="files/additional__photo.jpg" alt="Lummix">
+												<a href="">
+													<img class="products-item__photo" src="files/additional__photo.jpg" alt="Lummix">
+												</a>
 											</div>
 										</div>
 										<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
 											<div class="products-item-info">
-												<div class="products-item__title">MOTTURA 54.Y.787</div>
+												<div class="products-item__title"><a href="">MOTTURA 54.Y.787</a></div>
+												<div class="products-properties clearfix">
+													<div class="products-item-property">
+														<span class="property--bold">Тип замка:</span>
+														Двух системный с перекодировкой
+													</div>
+													<div class="products-item-property">
+														<span class="property--bold">Количество ригелей:</span>
+														5 шт.
+													</div>
+													<div class="products-item-property">
+														<span class="property--bold">Диаметр ригелей:</span>
+														18 мм
+													</div>
+												</div>
+												<div class="products-list__title">
+													Вылет ригелей:
+												</div>
+												<ul>
+													<li>сувальдный - 40 мм</li>
+													<li>цилиндровый - 22 мм</li>
+												</ul>
+												<p>
+													Ключи с функцией Антислепок. Со сменным внутренним механизмом. Многократное число перекодировки.
+												</p>
+											</div>
+										</div>
+									</div>
+		            </div>
+								<div class="swiper-slide">
+									<div class="products-item clearfix">
+										<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+											<div class="products-item-photo">
+												<a href="">
+													<img class="products-item__photo" src="files/additional__photo.jpg" alt="Lummix">
+												</a>
+											</div>
+										</div>
+										<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+											<div class="products-item-info">
+												<div class="products-item__title"><a href="">MOTTURA 54.Y.787</a></div>
 												<div class="products-properties clearfix">
 													<div class="products-item-property">
 														<span class="property--bold">Тип замка:</span>
@@ -533,8 +868,8 @@
 	<div class="products products--inner block--hide clearfix">
 		<div class="container container--with--padding">
 			<div class="products-nav clearfix">
-				<div class="products-nav-prev"></div>
-				<div class="products-nav-next"></div>
+				<div class="products-nav-in-prev products-nav-prev"></div>
+				<div class="products-nav-in-next products-nav-next"></div>
 			</div>
 			<div class="row">
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col--no--padding">
@@ -543,7 +878,7 @@
 			</div><!-- row -->
 
 			<div class="row">
-				<div class="swiper-container swiper-products">
+				<div class="swiper-container swiper-products-inner">
 		        <div class="swiper-wrapper">
 		            <div class="swiper-slide">
 									<div class="products-item clearfix">

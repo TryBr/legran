@@ -343,11 +343,8 @@ $(document).ready(function() {
 			swiperSeriesColorAdditional.slideNext();
 	});
 
-
-	/*-------------------*/
-
 	/*---------------
-			#SERIES COLOR SLIDER 2
+			#SERIES COLOR SLIDER 3
 	---------------*/
 	var swiperSeriesColorMain2 = new Swiper('.swiper-colors-main-2', {
 			slidesPerView: 3,
@@ -386,7 +383,7 @@ $(document).ready(function() {
 	});
 
 	/*---------------
-			#SERIES COLOR SLIDER 2
+			#SERIES COLOR SLIDER 4
 	---------------*/
 	var swiperSeriesColorAdditional2 = new Swiper('.swiper-colors-additional-2', {
 			slidesPerView: 3,

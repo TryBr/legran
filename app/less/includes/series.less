@@ -1,14 +1,25 @@
 .series-page {
   .page-menu-wrapper {
     position: absolute;
-    top: 13px;
+    top: 6px;
     right: 0;
     width: 215px;
     z-index: 1;
     background: #fff;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 40px;
+      height: 26px;
+      position: absolute;
+      left: -40px;
+      top: 0px;
+      background: #fc0;
+    }
+
     .page-menu {
       padding-left: 25px;
-      width: 95px;
       margin-top: 4px;
       position: relative;
     }
@@ -38,7 +49,7 @@
           height: 15px;
           position: absolute;
           top: 3px;
-          right: -18px;
+          right: 100px;
         }
       }
     }
@@ -71,7 +82,7 @@
     }
 
     .series-information {
-      padding-left: 40px;
+      padding-left: 50px;
       padding-top: 55px;
       color: #000000;
       font-size: 16px;
@@ -80,7 +91,7 @@
     }
 
     .series-information-links {
-      padding-left: 40px;
+      padding-left: 50px;
       margin-top: 20px;
       .series-information__link {
         color: #000000;
@@ -110,7 +121,7 @@
           &:after {
             content: '';
             position: absolute;
-            top: -3px;
+            top: 0px;
             right: -26px;
             width: 10px;
             height: 16px;
@@ -231,6 +242,7 @@
 
       &:hover {
         color: #ffcc00;
+        font-weight: bold;
       }
     }
 
@@ -521,7 +533,7 @@
 
     .products-item-info {
       margin-left: 20px;
-
+      font-size: 16px;
       .products-properties {
         .products-item-property {
           color: #000000;
@@ -541,15 +553,18 @@
         font-weight: 100;
         font-family: "MuseoSansBlack";
         font-weight: 700;
+        margin-bottom: 13px;
       }
 
       ul {
         padding: 0px;
         list-style: none;
+        margin-bottom: 15px;
         li {
           position: relative;
           padding-left: 25px;
           margin-bottom: 10px;
+          font-size: 16px;
           &:before {
             content: '';
             width: 6px;
@@ -585,7 +600,7 @@
       }
       &:before {
         content: '';
-        width: 120px;
+        width: 44px;
         height: 3px;
         background: #ffcc00;
         position: absolute;

@@ -13,8 +13,8 @@ var gulp           = require('gulp'),
 		notify         = require("gulp-notify"),
 		rsync          = require('gulp-rsync');
 		less 					 = require('gulp-less');
-		LessAutoprefix = require('less-plugin-autoprefix');
-		autoprefix     = new LessAutoprefix({ browsers: ['last 2 versions'] });
+		//LessAutoprefix = require('less-plugin-autoprefix');
+		//autoprefix     = new LessAutoprefix({ browsers: ['last 2 versions'] });
 // Скрипты проекта
 
 gulp.task('common-js', function() {
@@ -64,7 +64,7 @@ gulp.task('browser-sync', function() {
 gulp.task('less', function () {
   return gulp.src('app/less/main.less')
 	.pipe(less({
-	    plugins: [autoprefix]
+		//plugins: [autoprefix]
 	  }))
 	.pipe(rename({suffix: '.min', prefix : ''}))
 	.pipe(cleanCSS()) // Опционально, закомментировать при отладке

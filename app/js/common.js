@@ -493,4 +493,15 @@ $(document).ready(function() {
 		 }, 500);
  	 });
 
+
+	 /*---------------
+			 # SERIES COLORS
+	 ---------------*/
+	 $('.series-colors-item').click(function() {
+		 $(this).parents('.swiper-container').find('.swiper-slide').each(function( index ) {
+			  $(this).removeClass('active');
+		 });
+
+		 $(this).parents('.swiper-slide').addClass('active');
+ 	 });
 });

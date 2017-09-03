@@ -33,6 +33,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/wow/wow.min.js',
 		'app/libs/validate/jquery.validate.min.js',
 		'app/libs/bootstrap/bootstrap.min.js',
+		'app/libs/jqueryui/jquery-ui.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

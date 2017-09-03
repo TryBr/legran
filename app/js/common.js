@@ -445,8 +445,17 @@ $(document).ready(function() {
 				$("#agree").parent().addClass('invalid');
 				return false;
 		}
-		return false;
+		return true;
 	});
+
+	$(".form__field").blur(function(){
+	    if($(this).val() !== ''){
+	        $(this).addClass('not--empty');
+	    } else {
+				$(this).removeClass('not--empty');
+			}
+	});
+
 
 	/*---------------
 			# RIGHT MENU SERIES
@@ -472,24 +481,24 @@ $(document).ready(function() {
 	/*---------------
 			# SCROLLING
 	---------------*/
-  $(window).scroll( function(){
-
-      /* Check the location of each desired element */
-      $('.block--hide').each( function(i){
-
-          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
-
-          /* If the object is completely visible in the window, fade it it */
-          if( bottom_of_window >= bottom_of_object ){
-
-              $(this).animate({'opacity':'1'},500);
-
-          }
-
-      });
-
-  });
+  // $(window).scroll( function(){
+	//
+  //     /* Check the location of each desired element */
+  //     $('.block--hide').each( function(i){
+	//
+  //         var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+  //         var bottom_of_window = $(window).scrollTop() + $(window).height();
+	//
+  //         /* If the object is completely visible in the window, fade it it */
+  //         if( bottom_of_window >= bottom_of_object ){
+	//
+  //             $(this).animate({'opacity':'1'},500);
+	//
+  //         }
+	//
+  //     });
+	//
+  // });
 
 
 	/*---------------
@@ -500,7 +509,9 @@ $(document).ready(function() {
 		errorPlacement: function(error, element) {
 			error.appendTo('.form__error');
 		}
-	 });
+	});
+
+
 
 	//  $('.series-information__link').click(function() {
 	// 	 $('html, body').animate({
@@ -519,4 +530,30 @@ $(document).ready(function() {
 
 		 $(this).parents('.swiper-slide').addClass('active');
  	 });
+
+
+	 /*---------------
+			 # DEFAULT PAGE
+	 ---------------*/
+   $('.default-page img').each( function(i){
+       var img_height = Math.round($(this).height());
+       var img_width = Math.round($(this).width());
+
+
+			 $(this).wrap("<div class='content-photo-wrapper'></div>");
+			 			 $('.content-photo-wrapper').append('<div class="content-photo-bg"><div>');
+
+			 $('.content-photo-bg').width(img_width);
+			 $('.content-photo-bg').height(img_height);
+   });
+
+
+	 $( function() {
+		$( "#tabs" ).tabs({ active: 0 });
+	 });
+
+	 $( function() {
+		$( "#tabs2" ).tabs({ active: 0 });
+	 });
+
 });

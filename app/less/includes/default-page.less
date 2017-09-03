@@ -206,19 +206,26 @@
   .content-photo-wrapper {
     margin-left: 30px;
     position: relative;
-    &:before {
-      content: '';
-      background: #f0f0f0;
-      position: absolute;
-      top: -30px;
-      left: -30px;
-      width: 730px;
-      height: 548px;
-    }
+    // &:before {
+    //   content: '';
+    //   background: #f0f0f0;
+    //   position: absolute;
+    //   top: -30px;
+    //   left: -30px;
+    //   width: 730px;
+    //   height: 548px;
+    // }
 
     img {
       position: relative;
       z-index: 1;
+    }
+
+    .content-photo-bg {
+      background: #f0f0f0;
+      position: absolute;
+      top: -30px;
+      left: -30px;
     }
   }
 }

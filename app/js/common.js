@@ -440,6 +440,21 @@ $(document).ready(function() {
 				return false;
 		}
 		return true;
+		var msg   = $('#contacts-form').serialize();
+    $.ajax({
+      type: 'POST',
+      url: 'send.php',
+      data: msg,
+			dataType: 'json',
+      success: function(data) {
+        $('#results').html(data);
+				$('.contacts-form-result').text('Успех! Форма отправлена.');
+      },
+      error:  function(xhr, str){
+  			console.log('Возникла ошибка: ' + xhr.responseCode);
+				$('.contacts-form-result').text('Ошибка! Форма не отправлена!');
+      }
+    });
 	});
 
 	$(".form__field").blur(function(){

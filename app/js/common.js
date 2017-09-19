@@ -429,6 +429,7 @@ $(document).ready(function() {
 			#BANNER SLIDER
 	---------------*/
 	var swiperBanner = new Swiper('.swiper-banner', {
+		autoplay: 3000
 	});
 
 	/*---------------

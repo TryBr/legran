@@ -3,9 +3,6 @@
   margin-bottom: 28px;
   margin-top: 50px;
   background: none;
-
-
-
   span {
     position: relative;
     font-size: 16px;
@@ -13,6 +10,19 @@
     color: #000000;
     text-decoration: none;
     margin-right: 15px;
+  }
+
+  .breadcrumb-item {
+    &:last-child {
+      &:after {
+        color: #ffcc00;
+        content: "/";
+        padding: 0 5px;
+        position: absolute;
+        right: -16px;
+        top: 0px;
+      }
+    }
   }
 }
 

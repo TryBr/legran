@@ -117,6 +117,20 @@
 }
 
 
+@media only screen and (max-width : 1300px) {
+  .products {
+    .products-nav {
+      .products-nav-prev {
+        left: -10px;
+      }
+
+      .products-nav-next {
+        right: -10px;
+      }
+    }
+  }
+}
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1199px) {
   .products {
@@ -142,10 +156,6 @@
         display: none;
       }
     }
-
-    .products-nav {
-      display: none;
-    }
   }
 }
 
@@ -170,12 +180,36 @@
       margin: 0 auto;
       padding:  0 15px;
     }
+
+    .products-nav {
+       .products-nav-prev {
+         left: 10px;
+         top: 50%;
+       }
+
+       .products-nav-next {
+         right: 10px;
+         top: 50%;
+       }
+    }
   }
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
+  .products {
+    .products-nav {
+       .products-nav-prev {
+         left: 10px;
+         top: 50%;
+       }
 
+       .products-nav-next {
+         right: 10px;
+         top: 50%;
+       }
+    }
+  }
 }
 
 /* Small Devices, Tablets */
@@ -185,10 +219,34 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  .products {
+    .products-nav {
+       .products-nav-prev {
+         left: 10px;
+         top: 50%;
+       }
 
+       .products-nav-next {
+         right: 10px;
+         top: 50%;
+       }
+    }
+  }
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+  .products {
+    .products-nav {
+       .products-nav-prev {
+         left: 2px;
+         top: 50%;
+       }
 
+       .products-nav-next {
+         right: 2px;
+         top: 50%;
+       }
+    }
+  }
 }

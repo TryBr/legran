@@ -575,7 +575,14 @@ $(document).ready(function() {
 					 slidesPerView: 'auto',
 		 			 paginationClickable: true,
 		 			 spaceBetween: 30,
+					 roundLengths: true,
+					 nested: true,
+					 freeMode: true,
+					 freeModeMomentum: true,
+			 		 freeModeSticky: true,
 		 			 slideToClickedSlide: true,
+					 resistance: false,
+					 preventClicks: false,				 
 		 			 breakpoints: {
 		 			 	// when window width is <= 320px
 		 			 	320: {

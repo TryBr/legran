@@ -35,6 +35,7 @@ gulp.task('js', ['common-js'], function() {
 		'app/libs/bootstrap/bootstrap.min.js',
 		'app/libs/jqueryui/jquery-ui.min.js',
 		'app/libs/maskedinput/maskedinput.js',
+		'app/libs/owl/owl.carousel.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))

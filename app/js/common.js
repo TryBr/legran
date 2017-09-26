@@ -349,51 +349,6 @@ $(document).ready(function() {
 		$( "#tabs2" ).tabs({ active: 0 });
 	 });
 
-	 /*---------------
-			 # SWIPER SLIDERS SERIES
-	 ---------------*/
-		// var tileSlider = $('.swiper-series');
-		// tileSlider.each(function(){
-		//     var mySwiper = new Swiper(this, {
-		// 			 slidesPerView: 'auto',
-		//  			 paginationClickable: true,
-		//  			 spaceBetween: 30,
-		// 			 roundLengths: true,
-		// 			 nested: true,
-		// 			 freeMode: true,
-		// 			 freeModeMomentum: true,
-		// 	 		 freeModeSticky: true,
-		//  			 slideToClickedSlide: true,
-		// 			 resistance: false,
-		// 			 preventClicks: false,
-		//  			 breakpoints: {
-		//  			 	// when window width is <= 320px
-		//  			 	320: {
-		//  			 		slidesPerView: 1,
-		//  			 		spaceBetween: 0
-		//  			 	},
-		//  			 	// when window width is <= 480px
-		//  			 	480: {
-		//  			 		slidesPerView: 1,
-		//  			 		spaceBetween: 0
-		//  			 	},
-		//  			 	// when window width is <= 640px
-		//  			 	767: {
-		//  			 		slidesPerView: 2,
-		//  			 		spaceBetween: 0
-		//  			 	},
-		//  			 	1199: {
-		//  			 		slidesPerView: 4,
-		//  			 		spaceBetween: 0
-		//  			 	}
-		//  			},
-		//  		  observer: true,
-	  //       nextButton: $(this).parents('.series-variants-slider').find('.series-nav-next')[0],
-	  //       prevButton: $(this).parents('.series-variants-slider').find('.series-nav-prev')[0]
-		//     });
-		// });
-
-
 		/*---------------
 				#SERIES COLOR SLIDER MAIN
 		---------------*/
@@ -472,6 +427,11 @@ $(document).ready(function() {
 		---------------*/
 		$(".phone__field").mask("+7 (999) 999-999-99", { autoclear: false } );
 
+
+
+		/*---------------
+				# SWIPER SLIDERS SERIES
+		---------------*/
 		var owlsliders = $(".series-carousel");
 		owlsliders.each(function() {
 				$(this).owlCarousel({
@@ -484,22 +444,11 @@ $(document).ready(function() {
 						dots: false,
 						navText: false,
 						mouseDrag: true,
-						URLhashListener: false
+						URLhashListener:true,
+		        startPosition: 'URLHash'
 				});
 		});
 
-		// $('.series-carousel').owlCarousel({
-		//     margin:30,
-		//     loop:true,
-		// 		slideBy: 1,
-		//     autoWidth:true,
-		//     items: 1,
-		// 		nav: true,
-		// 		dots: false,
-		// 		navText: false,
-		// 		mouseDrag: true,
-		// 		URLhashListener: false
-		// });
 
 		$('.series-nav-next').click(function() {
 	    	$('.series-carousel').trigger('owl.next');
@@ -530,7 +479,7 @@ $(document).ready(function() {
 		        elW += $(this)[0].getBoundingClientRect().width;
 		    });
 		    if ( elW > stageW ) {
-			 console.log('elW maggiore di stageW: ' +  elW + ' > ' + stageW);
+			//  console.log('elW maggiore di stageW: ' +  elW + ' > ' + stageW);
 			 $stage.width( Math.ceil( elW ) );
 		    }
 		}
@@ -544,6 +493,38 @@ $(document).ready(function() {
 		$('.owl-carousel').on('onResize.owl.carousel', function(event) {
 		    recalcCarouselWidth( $('.owl-carousel') );
 		});
+
+		// $('.owl-item').click(function() {
+		// 		var owlSliderActive = $(this).parents('.series-carousel');
+		// 		$('.owl-item').removeClass('clicked');
+		// 		$(this).addClass('clicked');
+		// 		// owlSliderActive.on('changed.owl.carousel', function (e) {
+		// 		// 		console.log("current: ",e.relatedTarget.current())
+		// 		// 		console.log("current: ",e.item.index) //same
+		// 		// 		console.log("total: ",e.item.count)   //total
+		// 		// });
+		//
+		// 		owlSliderActive.find('.owl-item').each(function( index ) {
+		// 			 if ( ($(this).hasClass('clicked')) ) {
+		// 				 console.log('НАШЛИ');
+		// 				 console.log(index);
+		// 				 owlSliderActive.trigger('to.owl.carousel', index);
+		// 			 }
+		// 		});
+		// 		owlSliderActive.trigger('refresh.owl.carousel');
+		// 		owlSliderActive.trigger('initialized.owl.carousel');
+		// 		owlSliderActive.trigger('resize.owl.carousel');
+		// });
+
+
+		// $('.owl-carousel').on('click', '.owl-item', function(e) {
+		//   var carousel = $('.owl-carousel').data('owl.carousel');
+		// 	var itemIndex = $(this).index();
+		// 	var owlSliderActive = $(this).parents('.series-carousel');
+		// 	e.preventDefault();
+		// 	owlSliderActive.trigger('to.owl.carousel', itemIndex - 2);
+		//
+		// });
 
 
 });

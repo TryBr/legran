@@ -1316,10 +1316,14 @@
     top: 0px;
     right: 0px;
     left: 0px;
+    float: left;
 
     &.series-colors-slider--additional {
       margin-top: 50px;
       margin-bottom: 50px;
+      float: left;
+      clear: both;
+      right: 0px;
     }
   }
 
@@ -1389,5 +1393,34 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+  .series-variants-slider {
+    .swiper-series {
+      height: auto;
+    }
 
+    .owl-stage-outer {
+      height: auto !important;
+      padding-bottom: 80px;
+    }
+
+    .owl-item.active {
+      &.selected {
+        .series-variants-item__title {
+          width: 100%;
+          bottom: -70px;
+          left: 0px;
+          right: 0px;
+          text-align: center;
+          top: auto;
+          &:before {
+            display: none;
+          }
+
+          &:after {
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
 }

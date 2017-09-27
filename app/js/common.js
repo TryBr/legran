@@ -445,7 +445,21 @@ $(document).ready(function() {
 						navText: false,
 						mouseDrag: true,
 						URLhashListener:true,
-		        startPosition: 'URLHash'
+		        startPosition: 'URLHash',
+						responsive : {
+						    // breakpoint from 0 up
+						    0 : {
+						        items: 1
+						    },
+						    // breakpoint from 480 up
+						    480 : {
+						        items: 1
+						    },
+						    // breakpoint from 768 up
+						    768 : {
+						        items: 2
+						    }
+						}
 				});
 		});
 
@@ -459,7 +473,7 @@ $(document).ready(function() {
 		});
 
 		var seriesCarousel = $(this);
-
+		$('.series-carousel').find('.owl-item.active:first').addClass('selected');
 		$('.series-carousel').on('translated.owl.carousel', function(event) {
 				$(".series-carousel").trigger('refresh.owl.carousel');
 				$(".series-carousel").trigger('initialized.owl.carousel');
